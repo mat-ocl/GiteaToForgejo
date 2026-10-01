@@ -31,7 +31,7 @@ Python script to batch-migrate repositories, organizations, issues, PRs, wikis, 
 Clone the repository and mark the script as executable:
 
 ```bash
-git clone [https://github.com/mat-ocl/GiteaToForgejo.git](https://github.com/mat-ocl/GiteaToForgejo.git)
+git clone https://github.com/mat-ocl/GiteaToForgejo.git
 cd GiteaToForgejo
 chmod +x migrate.py
 
@@ -47,9 +47,9 @@ Always run a dry run first to verify token access and view the discovery list:
 
 ```bash
 python3 migrate.py \
-  --gitea-url "[https://gitea.example.com](https://gitea.example.com)" \
+  --gitea-url "https://gitea.example.com" \
   --gitea-token "your_gitea_token" \
-  --forgejo-url "[https://forgejo.example.com](https://forgejo.example.com)" \
+  --forgejo-url "https://forgejo.example.com" \
   --forgejo-token "your_forgejo_token" \
   --dry-run
 
@@ -59,9 +59,9 @@ python3 migrate.py \
 
 ```bash
 python3 migrate.py \
-  --gitea-url "[https://gitea.example.com](https://gitea.example.com)" \
+  --gitea-url "https://gitea.example.com" \
   --gitea-token "your_gitea_token" \
-  --forgejo-url "[https://forgejo.example.com](https://forgejo.example.com)" \
+  --forgejo-url "https://forgejo.example.com" \
   --forgejo-token "your_forgejo_token"
 
 ```
